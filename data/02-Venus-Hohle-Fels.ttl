@@ -1,0 +1,13 @@
+:hohle-fels-figurine a :human-figure ;
+   rdfs:label "Female Figurine from Hohle Fels" ;
+   :described-by <https://en.wikipedia.org/wiki/Venus_of_Hohle_Fels>  ,
+      <https://www.urmu.de/digitale-sammlung/objekt/frauenstatuette-1977-0119-0030-9000> ,
+      <https://www.nature.com/articles/nature07995> ;
+   :earliest-date -40000 ;
+   :latest-date -35000 ;
+   :in-modern-country-note "Germany" ;
+   :note "Translated from the Museum Blaubeuren site: “The statuette is 40,000 years old and was carved from a mammoth tusk. It broke apart over time in the ground. Six fragments were pieced together to form an almost complete figure. Instead of a head, there is a loop in the neck area. The female figure was once worn as an amulet or piece of jewelry.”" ;
+   :material-note "Mammoth ivory" ;
+   :art-historical-culture-or-tradition :aurignacian ;
+   :representative-latlong-point (48.379167 9.755556) ;
+   :wikimedia-commons-image-page <https://commons.wikimedia.org/wiki/File:VenusHohlefels2.jpg> .
