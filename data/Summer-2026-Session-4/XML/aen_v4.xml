@@ -57,7 +57,7 @@
                         <persName>
                             <name>Iuno</name>
                         </persName>
-                        <idno type="dbpedia">https://dbpedia.org/resource/Juno_(mythology)</idno>
+                        <idno type="dbpedia">http://dbpedia.org/resource/Juno_(mythology)</idno>
                         <idno type="wikidata">http://www.wikidata.org/entity/Q125046</idno> <!-- optional for the exsercise -->
                         <idno type="VIAF">http://viaf.org/viaf/47558229</idno> <!-- optional for the exsercise -->
                         <idno type="d-nb">http://d-nb.info/gnd/118800574</idno> <!-- optional for the exsercise -->
@@ -71,7 +71,7 @@
                         <placeName>
                             <name>Troia</name>
                         </placeName>
-                        <idno type="dbpedia">https://dbpedia.org/resource/Troy</idno>
+                        <idno type="dbpedia">http://dbpedia.org/resource/Troy</idno>
                         <idno type="VIAF">http://viaf.org/viaf/241435491</idno> <!-- optional for the exsercise -->
                     </place>
 
@@ -79,7 +79,7 @@
                         <placeName>
                             <name>Lavinium</name>
                         </placeName>
-                        <idno type="dbpedia">https://dbpedia.org/resource/Lavinium</idno>
+                        <idno type="dbpedia">http://dbpedia.org/resource/Lavinium</idno>
                         <idno type="VIAF">http://viaf.org/viaf/243024149</idno> <!-- optional for the exsercise -->
                     </place>
 
@@ -87,7 +87,7 @@
                         <placeName>
                             <name>Italia</name>
                         </placeName>
-                        <idno type="dbpedia">https://dbpedia.org/resource/Italy</idno>
+                        <idno type="dbpedia">http://dbpedia.org/resource/Italy</idno>
                         <idno type="VIAF">http://viaf.org/viaf/152361066</idno> <!-- optional for the exsercise -->
                     </place>
 
