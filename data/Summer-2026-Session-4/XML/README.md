@@ -1,11 +1,8 @@
-## v1 (version 1)
+## aen_incomplete.xml
 
-At this stage, the file includes `<place>` and `<person>` lements in the TEI header, as well as `<placeName ref="§">` and `<persName ref="§">` markup for the names of those places and persons in Vergil's text, but the markup is incomplete: attribute values are missing and the "§" sign is used as a placeholder.
+At this stage, the file includes `<place>` and `<person>` lements in the TEI header, as well as `<placeName ref="...">` and `<persName ref="...">` markup for the names of those places and persons in Vergil's text, but the markup is incomplete: LOD URIs in the `<idno>` children of `<person>` and `<place>` are missing (replaced by "§" placeholders).
 
-## v2
 
-At this stage, the "§" placeholders have been replaced with the relevant LOD URIs within elements `<person>` and `<place>` (and their children elements).
+## aen_complete.xml
 
-## v3
-
-At this stage, the "§" placeholders have been replaced with the relevant LOD URIs in elements `<persName>` and `<placeName>` in Vergil's text (pointing to the `xml:id` of `person` and `place` elementsin the TEI Header).
+At this stage, the "§" placeholders have been replaced with the relevant LOD URIs. The file is complete and ready to be uploaded to the website that will process it.
