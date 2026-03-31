@@ -1,0 +1,163 @@
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.21/tei-epidoc.rng"
+                         schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.21/tei-epidoc.rng"
+                         schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Aeneid (incipit only)</title>
+                <author>P. Vergilius Maro</author>
+                <editor>J. B. Greenough</editor>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <resp>Prepared under the supervision of</resp>
+                    <name>Bridget Almas</name>
+                    <name>Lisa Cerrato</name>
+                    <name>William Merrill</name>
+                    <name>David Smith</name>
+                </respStmt>
+                <respStmt>
+                    <persName>Zach Himes</persName>
+                    <orgName>Tufts University</orgName>
+                    <resp>CTS and EpiDoc conversion</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Paolo Monella</persName>
+                    <orgName>Kore University of Enna</orgName>
+                    <resp>Shortened and simplified the file for educational purposes</resp>
+                </respStmt>
+                <funder n="org:NEH">The National Endowment for the Humanities</funder>
+            </titleStmt>
+            <extent/>
+            <publicationStmt>
+                <publisher>Trustees of Tufts University</publisher>
+                <pubPlace>Medford, MA</pubPlace>
+                <authority>Perseus Project</authority>
+                <date type="release">1997-10-28</date>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <author>Vergil</author>
+                        <title>The Bucolics, Aeneid, and Georgics Of Virgil</title>
+                        <editor>J. B. Greenough</editor>
+                        <imprint>
+                            <pubPlace>Boston</pubPlace>
+                            <publisher>Ginn and Company</publisher>
+                            <date>1881</date>
+                        </imprint>
+                    </monogr>
+                    <ref target="https://hdl.handle.net/2027/uc1.a0000339325">HathiTrust</ref>                  
+                </biblStruct>
+
+                <listPerson>  <!-- §020 Insert persons -->
+
+                    <person xml:id="pe_iuno">
+                        <persName>
+                            <name>Iuno</name>
+                        </persName>
+                        <idno type="dbpedia">§</idno>
+                        <idno type="wikidata">§</idno> <!-- optional for the exsercise -->
+                        <idno type="VIAF">§</idno> <!-- optional for the exsercise -->
+                        <idno type="d-nb">§</idno> <!-- optional for the exsercise -->
+                    </person>
+
+                </listPerson>
+
+                <listPlace> <!-- §030 Insert places -->
+
+                    <place xml:id="pl_troia">
+                        <placeName>
+                            <name>Troia</name>
+                        </placeName>
+                        <idno type="dbpedia">§</idno>
+                        <idno type="VIAF">§</idno> <!-- optional for the exsercise -->
+                    </place>
+
+                    <place xml:id="pl_lavinium">
+                        <placeName>
+                            <name>Lavinium</name>
+                        </placeName>
+                        <idno type="dbpedia">§</idno>
+                        <idno type="VIAF">§</idno> <!-- optional for the exsercise -->
+                    </place>
+
+                    <place xml:id="pl_italia">
+                        <placeName>
+                            <name>Italia</name>
+                        </placeName>
+                        <idno type="dbpedia">§</idno>
+                        <idno type="VIAF">§</idno> <!-- optional for the exsercise -->
+                    </place>
+
+                </listPlace>
+
+            </sourceDesc>
+        </fileDesc>
+        
+        <encodingDesc>
+            <projectDesc>
+                <p> This is a shortened version of the text, only including the incipit,
+                with simplified TEI encoding. Paolo Monella created it on Marcy 31, 2026,
+                starting from the full XML TEI file downloaded from the Perseus Digital
+                Library GitHub repository, in order to use it to teach, with Daniele Fusi,
+                a Sunoikisis session on LOD in Spring 2026. </p>
+            </projectDesc>
+            <refsDecl n="CTS">
+                <cRefPattern n="line"
+                    matchPattern="().(\w+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']//tei:l[@n='$2'])">
+                    <p>This pointer pattern extracts book and line</p>
+                </cRefPattern>
+                <cRefPattern n="Book"
+                    matchPattern="(\w+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts book</p>
+                </cRefPattern>
+            </refsDecl>
+            <refsDecl>
+                <refState unit="book" delim="."/>
+                <refState unit="line"/>
+            </refsDecl>
+            <editorialDecl>
+                <quotation marks="none"/>
+            </editorialDecl>
+        </encodingDesc>	
+        <profileDesc>
+            <langUsage>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        
+        <revisionDesc>
+            <change when="2026-03-31" who="Paolo Monella"> Cropped out only the incipit and simplified the TEI encoding, in order to use the shortened and simplified file to teach, with Daniele Fusi, a Sunoikisis session on LOD in Spring 2026. </change>
+           <change when="2019-09-08" who="many editors">More edits on and before 2029 were listed below, cropped by P. Monella on March 31, 2026 to simplify the file</change>
+        </revisionDesc>
+    </teiHeader>
+
+
+
+    <text xml:lang="lat" >
+        <body>
+
+            <div n="1" type="textpart" subtype="book">
+
+
+                <!-- §040 Insert references to the xml:id of 'person' and 'place' elements of the TEI Header -->
+
+                <l n="1">Arma virumque cano, <placeName ref="§">Troiae</placeName> qui primus ab oris</l>
+                <l n="2"><placeName ref="§">Italiam</placeName>, fato profugus,
+                <placeName ref="§">Laviniaque</placeName> venit</l>
+                <l n="3">litora, multum ille et terris iactatus et alto</l>
+                <l n="4">vi superum saevae memorem <persName ref="§">Iunonis</persName> ob iram;</l>
+                <l> [...] </l>
+
+
+            </div>
+
+        </body>
+    </text>
+
+
+</TEI>
