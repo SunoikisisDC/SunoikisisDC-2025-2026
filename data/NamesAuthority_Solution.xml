@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    
+    <teiHeader>
+        
+        <fileDesc>
+            
+            <titleStmt>
+                <title>Master Names: Exercise</title>
+                <editor role="encoder">[Student name]</editor>
+            </titleStmt>
+            
+            <publicationStmt>
+                <p>Teaching material for the Sunoikisis workshop.</p>
+            </publicationStmt>
+            
+            <sourceDesc>
+                <p>Mock authority file based on the Styra corpus.</p>
+            </sourceDesc>
+            
+        </fileDesc>
+        
+    </teiHeader>
+    
+    <text>
+        <body>
+            
+            
+            <listNym>
+                
+                <nym xml:id="Κλεογενίδης">
+                    
+                    <form type="lemma">
+                        <orth>Κλεογενίδης</orth>
+                        <usg type="dialect">Euboean</usg>
+                    </form>
+                    
+                    <form type="variant">
+                        <orth>Κλογενίδης</orth>
+                        <usg type="dialect">Euboean</usg>
+                    </form>
+                    
+                    <form type="variant">
+                        <orth>Κλογενίδας</orth>
+                        <usg type="dialect">South Doric</usg>
+                    </form>
+                    
+                    <ref type="LGPN-Ling">
+                        https://lgpn-ling.huma-num.fr/Kleogenides
+                    </ref>
+                    
+                </nym>
+                
+            </listNym>
+            
+        </body>
+    </text>
+    
+</TEI>
+```
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    
+    <teiHeader>
+        
+        <fileDesc>
+            
+            <titleStmt>
+                <title>Master Names: Exercise</title>
+                <editor role="encoder">[Student name]</editor>
+            </titleStmt>
+            
+            <publicationStmt>
+                <p>Teaching material for the Sunoikisis workshop.</p>
+            </publicationStmt>
+            
+            <sourceDesc>
+                <p>Mock authority file based on the Styra corpus.</p>
+            </sourceDesc>
+            
+        </fileDesc>
+        
+    </teiHeader>
+    
+    <text>
+        <body>
+            
+            <!-- Complete the authority record with the lemma form,
+                 the dialectal variant(s), and the external reference(s) -->
+            
+            <listNym>
+                
+                <nym xml:id="Κλεογενίδης">
+                    
+                    <form type="lemma">
+                        <orth></orth>
+                        <usg type="dialect"></usg>
+                    </form>
+                    
+                    <form type="variant">
+                        <orth></orth>
+                        <usg type="dialect"></usg>
+                    </form>
+                    
+                    <ref type="LGPN-Ling">
+                        
+                    </ref>
+                    
+                </nym>
+                
+            </listNym>
+            
+        </body>
+    </text>
+    
+</TEI>
+```
+
